@@ -1,0 +1,123 @@
+.cheer-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #13294B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 2rem 0;
+    box-sizing: border-box;
+  }
+  
+  .cheer-container h1 {
+    color: #fff;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-shadow: 1px 2px 8px #0007;
+  }
+  
+  .cheer-form {
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(2px);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    max-width: 460px;
+  }
+  
+  .cheer-form input,
+  .cheer-form textarea {
+    padding: 0.8rem 1rem;
+    border: 2px solid #ff6347;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    background: #fff;
+    color: #222;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  .cheer-form input:focus,
+  .cheer-form textarea:focus {
+    border-color: #13294B;
+  }
+  
+  .cheer-form button {
+    background: linear-gradient(90deg, #ff6347 80%, #fbbf24 100%);
+    color: #fff;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(255,99,71,0.08);
+  }
+  
+  .cheer-form button:hover {
+    background: linear-gradient(90deg, #fbbf24 0%, #ff6347 100%);
+  }
+  
+  .cheer-list {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .cheer-item {
+    background: #fff;
+    border-left: 7px solid #ff6347;
+    padding: 1.2rem 1.5rem 1.2rem 2rem;
+    border-radius: 13px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    position: relative;
+    animation: fadeInUp 0.7s;
+  }
+  
+  .cheer-item h3 {
+    color: #ff6347;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .cheer-item p {
+    color: #222;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.08rem;
+    word-break: break-all;
+  }
+  
+  .cheer-item span {
+    font-size: 0.92rem;
+    color: #888;
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.1rem;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px);}
+    to   { opacity: 1; transform: translateY(0);}
+  }
+  
+  /* 모바일 대응 */
+  @media (max-width: 600px) {
+    .cheer-form, .cheer-list { max-width: 98vw; }
+    .cheer-form { padding: 1rem 0.5rem; }
+    .cheer-item { padding: 1rem 1rem 1rem 1.2rem; }
+  }
+  
