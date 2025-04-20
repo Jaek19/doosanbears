@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/doosanbears/static/css/main.95754fb6.css",
+    "main.js": "/doosanbears/static/js/main.5671daec.js",
+    "static/js/453.6420b115.chunk.js": "/doosanbears/static/js/453.6420b115.chunk.js",
+    "index.html": "/doosanbears/index.html",
+    "main.95754fb6.css.map": "/doosanbears/static/css/main.95754fb6.css.map",
+    "main.5671daec.js.map": "/doosanbears/static/js/main.5671daec.js.map",
+    "453.6420b115.chunk.js.map": "/doosanbears/static/js/453.6420b115.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95754fb6.css",
+    "static/js/main.5671daec.js"
+  ]
+}
